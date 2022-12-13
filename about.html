@@ -9,28 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manjari&family=Oswald:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body style="
-    font-family: 'Quicksand';
-">
+<body>
     <header>
         <section style="
             background-color: #000; 
             color: #fff; 
             height: 45px; 
-            width: 100% - 60px; 
-            display: flex; 
+            width: auto;
             justify-content: space-between;
             align-items: center;
             padding: 0px 35px;
         ">
-            <span style="
-                letter-spacing: 1px;
-                font-size: 15px;
-                color: #FFFFFFB3;
-                font-family: Quicksand,Sans-serif;
-            ">There are many variations of passage</span>
-            <div style="display: flex; align-items: center;">
-                <div style="display: flex;">
+            <span style="color: #FFFFFFB3;">There are many variations of passage</span>
+            <div class="horizontal_wrapper">
+                <div class="horizontal_wrapper">
                     <img /> <!--icon-->
                     <div style="
                         color: #FFFFFFB3;
@@ -39,7 +31,7 @@
                     ">info@yourdomain.com</div>
                 </div>
                 <div style="height: 30px; width: 1px; background-color: azure; margin: 0px 20px;"></div>
-                <div style="display: flex;">
+                <div class="horizontal_wrapper">
                     <img /> <!--icon-->
                     <div style="
                         color: #FFFFFFB3;
@@ -49,7 +41,7 @@
                 </div>
             </div>
         </section>
-        <section style="display: flex; align-items: center; justify-content: space-between; padding: 0px 35px; height: 85px;">
+        <section style="align-items: center; justify-content: space-between; padding: 0px 35px; height: 85px; width: auto">
             <img style="height: 50px;" src="/assets/images/logo.png" alt="" srcset="">
             <ul style="display: flex; align-items: center; list-style: none;">
                 <li style="padding: 0px 20px; cursor: pointer; font-size: 16px;">Home</li>
@@ -71,12 +63,7 @@
             </ul>
         </section>
     </header>
-    <main style="
-        margin: 0px 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    ">
+    <main>
         <section style="
             width: 100%;
             margin-top: 80px;
@@ -126,6 +113,7 @@
             </div>
         </section>
         <section style="
+        display: block;
             background-color: #000;
             color: #fff;
             width: 100%;

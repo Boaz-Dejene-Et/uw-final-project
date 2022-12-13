@@ -1,0 +1,1 @@
+let emailReg = /\w+@\w+\.\w+/
