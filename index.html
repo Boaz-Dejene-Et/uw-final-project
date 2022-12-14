@@ -14,7 +14,7 @@
         <section class="header_top">
             <span style="color: #FFFFFFB3;">There are many variations of passage</span>
             <div class="horizontal_wrapper">
-                <div  class="horizontal_wrapper">
+                <div class="horizontal_wrapper">
                     <img /> <!--icon-->
                     <div class="header_top_info">info@yourdomain.com</div>
                 </div>
@@ -29,11 +29,9 @@
             <img style="height: 50px;" src="/assets/images/logo.png" alt="" srcset="">
             <ul class="horizontal_wrapper">
                 <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <button style="
-                    margin-left: 10px;
-                ">Booking</button>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button style="margin-left: 10px;">Booking</button>
             </ul>
         </section>
     </header>
@@ -133,130 +131,41 @@
             padding: 0px 35px;
             display: block;
         ">
-            <div class="horizontal_wrapper" style="
-                padding: 70px 80px 100px; 
-                background-color: #000; 
-                color: #fff;
-                flex-direction: column;
-            ">
-                <h2 style="
-                    font-size: 40px;
-                    text-transform: capitalize;
-                    letter-spacing: -0.6px;
-                    margin: 0 0 10px;
-                    text-align: center;
-                    margin-left: auto !important;
-                    margin-right: auto !important;
-                ">Book Your Hotel Room</h2>
-                <p style="
-                    color: #FFFFFF99;
-                    text-align: center;
-                    margin: 0 0 30px;
-                    line-height: 1.5;
-                ">There are many variations of passages of Lorem Ipsum available.</p>
-                <div style="
-                    display: flex;
-                    align-items: flex-end;
-                    justify-content: space-around;
-                    width: 100%;
-                    margin: 30px 0px;
-                ">
+            <form class="horizontal_wrapper quick_booking">
+                <h2 class="quick_booking_title">Book Your Hotel Room</h2>
+                <p class="quick_booking_desc">There are many variations of passages of Lorem Ipsum available.</p>
+                <div class="quick_booking_wrapper">
                     <div style="width: 20%">
-                        <div style="display: flex; align-items: center;">
+                        <div class="horizontal_wrapper">
                             <div style="margin-right: 10px; background-color: #fff; height: 10px; width: 10px"></div>
-                            <label style="
-                                font-family: Oswald,Sans-serif;
-                                font-size: 20px;
-                                font-weight: 500;
-                                text-transform: uppercase;
-                            ">BEDS</label>
+                            <label>BEDS</label>
                         </div>
-                        <select name="" id="" style="
-                            width: 100%; 
-                            color: #FFFFFF99;
-                            height: 55px;
-                            border-style: solid;
-                            border-width: 1px;
-                            border-color: #707070;
-                            border-radius: 31px;
-                            margin: 10px 0 0;
-                            box-shadow: -10px 25px 50px 0px rgb(0 0 0 / 30%);
-                            font-size: 16px;
-                            font-family: Quicksand,Sans-serif;
-                            background-color: #000;
-                            padding: 0px 20px;
-                            text-transform: capitalize;
-                            cursor: pointer
-                        ">
-                            <option value="">ewwew</option>
+                        <select name="beds" id="">
+                            <option value="tent">Tent</option>
+                            <option value="singleRoom">Single Room</option>
+                            <option value="coupleRoom">Couple Room</option>
                         </select>
                     </div>
                     <div style="width: 20%">
                         <div class="horizontal_wrapper">
                             <div style="margin-right: 10px; background-color: #fff; height: 10px; width: 10px"></div>
-                            <label style="
-                                font-family: Oswald,Sans-serif;
-                                font-size: 20px;
-                                font-weight: 500;
-                                text-transform: uppercase;
-                            ">DATE</label>
+                            <label>DATE</label>
                         </div>
-                        <input type="date" name="" id="" style="width: 100%; 
-                            color: #FFFFFF99;
-                            height: 55px;
-                            border-style: solid;
-                            border-width: 1px;
-                            border-color: #707070;
-                            border-radius: 31px;
-                            margin: 10px 0 0;
-                            box-shadow: -10px 25px 50px 0px rgb(0 0 0 / 30%);
-                            font-size: 16px;
-                            font-family: Quicksand,Sans-serif;
-                            background-color: #000;
-                            padding: 0px 20px;
-                            text-transform: capitalize;
-                            cursor: pointer
-                        ">
+                        <input type="date" name="date" id="">
                     </div>
                     <div style="width: 20%">
                         <div class="horizontal_wrapper">
                             <div style="margin-right: 10px; background-color: #fff; height: 10px; width: 10px"></div>
-                            <label style="
-                                font-family: Oswald,Sans-serif;
-                                font-size: 20px;
-                                font-weight: 500;
-                                text-transform: uppercase;
-                            ">GUEST</label>
+                            <label>GUEST</label>
                         </div>
-                        <select name="" id="" style="
-                            width: 100%; 
-                            color: #FFFFFF99;
-                            height: 55px;
-                            border-style: solid;
-                            border-width: 1px;
-                            border-color: #707070;
-                            border-radius: 31px;
-                            margin: 10px 0 0;
-                            box-shadow: -10px 25px 50px 0px rgb(0 0 0 / 30%);
-                            font-family: Quicksand,Sans-serif;
-                            font-size: 16px;
-                            background-color: #000;
-                            padding: 0px 20px;
-                            text-transform: capitalize;
-                            cursor: pointer
-                        ">
+                        <!-- <select name="guest" id="">
                             <option value="">ewwew</option>
-                        </select>
+                        </select> -->
+                        <input type="number" placeholder="Ex. 3 person" name="guest" id="">
                     </div>
-                    <button style="
-                        width: 20%;
-                        color: #000;
-                        height: 55px;
-                        margin: 10px 0 0;
-                        background-color: #fff;
-                    ">Book Now</button>
+                    <button type="submit">Book Now</button>
                 </div>
-            </div>
+            </form>
         </section>
         <section class="horizontal_wrapper" style="
             margin-top: 100px;
@@ -279,7 +188,7 @@
                     max-width: 370px;
                     color: #000;
                 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                <button>Read Now</button>
+                <button><a href="https://www.wikipedia.org" style="color: #fff;">Read Now</a></button>
             </div>
             <img src="https://demo.phlox.pro/hotel/wp-content/uploads/sites/239/2020/11/gerson-repreza-CepDpEiALqM-unsplash.jpg" alt="" srcset="" style="
                 width: 35%;
@@ -429,5 +338,7 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/shared/quickBooking.js"></script>
+    <script src="js/shared/footer.js"></script>
 </body>
 </html>

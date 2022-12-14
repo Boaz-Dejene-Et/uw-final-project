@@ -61,10 +61,6 @@ li {
 li:hover {
     font-weight: 500;
 }
-a {
-    text-decoration: none;
-    color: #000
-}
 form {
     width: 21%; 
     display: flex; 
@@ -136,83 +132,6 @@ footer {
     object-fit: center;
     height: 100%;
     width: 100%
-}
-.quick_booking {
-    margin-top: 0px;
-    padding: 70px 80px 100px; 
-    background-color: #000; 
-    color: #fff;
-    width: auto;
-}
-.quick_booking_title {
-    font-size: 40px;
-    text-transform: capitalize;
-    letter-spacing: -0.6px;
-    margin: 0 0 10px;
-    text-align: center;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-.quick_booking_desc {
-    color: #FFFFFF99;
-    text-align: center;
-    margin: 0 0 30px;
-    line-height: 1.5;
-}
-.quick_booking_wrapper {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    width: 100%;
-    margin: 30px 0px;
-}
-.quick_booking label {
-    font-family: 'Oswald',Sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.quick_booking select {
-    width: 100%; 
-    color: #FFFFFF99;
-    height: 55px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #707070;
-    border-radius: 31px;
-    margin: 10px 0 0;
-    box-shadow: -10px 25px 50px 0px rgb(0 0 0 / 30%);
-    font-size: 16px;
-    font-family: 'Quicksand',Sans-serif;
-    background-color: #000;
-    padding: 0px 20px;
-    text-transform: capitalize;
-    cursor: pointer
-}
-.quick_booking input {
-    width: 100%; 
-    color: #FFFFFF99;
-    height: 55px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #707070;
-    border-radius: 31px;
-    margin: 10px 0 0;
-    box-shadow: -10px 25px 50px 0px rgb(0 0 0 / 30%);
-    font-size: 16px;
-    font-family: 'Quicksand',Sans-serif;
-    background-color: #000;
-    padding: 0px 20px;
-    text-transform: capitalize;
-    cursor: pointer
-}
-.quick_booking button {
-    width: 20%;
-    color: #000;
-    padding: 0px;
-    height: 55px;
-    margin: 10px 0 0;
-    background-color: #fff;
 }
 .footer_top {
     display: flex;
