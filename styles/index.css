@@ -101,6 +101,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .gallery_card_image {
     position: relative; 
@@ -108,7 +109,7 @@
     height: 100%;
     width: 100%;
 }
-.gallery_card_image:hover {
+/* .gallery_card_image:hover {
     z-index: 1;
     -webkit-animation: gallery-hover-animation 0.17s linear alternate forwards;
     animation: gallery-hover-animation 0.17s linear alternate forwards;
@@ -122,7 +123,7 @@
         width: 110%;
         height: 110%;
     }
-}
+} */
 .gallery_card_content {
     position: absolute;
     left: 11%;

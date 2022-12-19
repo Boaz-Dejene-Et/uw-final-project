@@ -1,6 +1,7 @@
 let emailReg = /\w+@\w+\.\w+/;
 let modal = document.querySelector('#modal')
 let seenModal = localStorage.getItem("seenModal");
+let tl = new TimelineLite();
 
 const closeModal = () => {
     modal.classList.add('close_modal')
