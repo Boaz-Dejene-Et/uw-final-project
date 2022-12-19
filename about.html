@@ -4,65 +4,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Project</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manjari&family=Oswald:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <section style="
-            background-color: #000; 
-            color: #fff; 
-            height: 45px; 
-            width: auto;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0px 35px;
-        ">
+        <section class="header_top">
             <span style="color: #FFFFFFB3;">There are many variations of passage</span>
             <div class="horizontal_wrapper">
-                <div class="horizontal_wrapper">
-                    <img /> <!--icon-->
-                    <div style="
-                        color: #FFFFFFB3;
-                        font-size: 15px;
-                        text-align: center
-                    ">info@yourdomain.com</div>
-                </div>
+                <a href="tel:+251911015526" class="horizontal_wrapper" style="color: #fff">
+                    <ion-icon name="call-outline" style="width: 18px; height: 18px; margin-right: 7px;"></ion-icon>
+                    <div class="header_top_info">+1 555 458 235</div>
+                </a>
                 <div style="height: 30px; width: 1px; background-color: azure; margin: 0px 20px;"></div>
-                <div class="horizontal_wrapper">
-                    <img /> <!--icon-->
-                    <div style="
-                        color: #FFFFFFB3;
-                        font-size: 15px;
-                        text-align: center
-                    ">info@yourdomain.com</div>
-                </div>
+                <a href="mailto:info@yourdomain.com" class="horizontal_wrapper" style="color: #fff">
+                    <ion-icon name="mail-outline" style="width: 20px; height: 20px; margin-right: 7px;"></ion-icon>
+                    <div class="header_top_info">info@yourdomain.com</div>
+                </a>
             </div>
         </section>
-        <section style="align-items: center; justify-content: space-between; padding: 0px 35px; height: 85px; width: auto">
+        <section class="header_main">
             <img style="height: 50px;" src="/assets/images/logo.png" alt="" srcset="">
-            <ul style="display: flex; align-items: center; list-style: none;">
-                <li style="padding: 0px 20px; cursor: pointer; font-size: 16px;"><a href="index.html">Home</a></li>
-                <li style="padding: 0px 20px; cursor: pointer; font-size: 16px;">About</li>
-                <li style="padding: 0px 20px; cursor: pointer; font-size: 16px;"><a href="contact.html">Contact</a></li>
-                <button style="
-                    margin-left: 10px;
-                    height: 45px;
-                    width: 140px;
-                    border-radius: 30px;
-                    border-width: 0px;
-                    cursor: pointer;
-                    color: #fff;
-                    background-color: #000;
-                    font-size: 16px;
-                    font-weight: 500;
-                    font-family: Quicksand,Sans-serif;
-                ">Booking</button>
+            <ul class="horizontal_wrapper">
+                <li><a href="index.html">Home</a></li>
+                <li>About</li>
+                <li><a href="contact.html">Contact</a></li>
+                <button style="margin-left: 10px;">Booking</button>
             </ul>
         </section>
     </header>
+    <div id="modal" class="close_modal">
+        <div class="modal">
+            <img class="modal_image" src="https://images.unsplash.com/photo-1671138638073-ba77c5c2e388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" srcset="">
+            <div style="
+                width: 55%;
+                position: relative;
+                padding-top: 40px;
+            ">
+                <div class="modal_close_button" onclick="closeModal()">x</div>
+                <h1>Welcome to Phlox Hotel</h1>
+                <p style="padding-right: 33px;">When, while the lovely valley teems with vapour around me, and the meridian teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.</p>
+                <div style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 50px 33px 0px 0px;
+                ">
+                    <div style="height: 1px; width: 20%; background-color: #999;"></div>
+                    <div>Social Links</div>
+                    <div style="height: 1px; width: 20%; background-color: #999;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section style="
             width: 100%;
@@ -70,9 +67,7 @@
             display: flex;
             justify-content: space-between;
         ">
-            <div style="
-                width: 50%;
-            ">
+            <div style="width: 50%;">
                 <img src="https://demo.phlox.pro/hotel/wp-content/uploads/sites/239/2020/11/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg" alt="" srcset="" style="
                     object-fit: cover;
                     height: 100%;
@@ -84,9 +79,7 @@
             ">
                 <h5 style="
                     font-family: Manjari,Sans-serif;
-                    font-size: 20px;
                     font-weight: 400;
-                    text-transform: capitalize;
                     margin: 0 0 15px;
                     line-height: 1.4;
                     letter-spacing: 1px;
@@ -94,26 +87,17 @@
                 <h3 style="
                     font-size: 60px;
                     font-weight: 600;
-                    text-transform: capitalize;
-                    line-height: 1.1em;
                     max-width: 540px;
-                    font-family: 'Oswald';
                     margin: 0px;
                 ">Welcome To Phlox Hotel Theme</h3>
                 <div style="display: flex; align-items: center; justify-content: space-evenly; margin-top: 50px;">
                     <div style="background-color: #000; width: 3px; height: 70px"></div>
-                    <p style="
-                        width: 80%;
-                        font-size: 16px;
-                        /* max-width: 440px; */
-                        font-family: 'Quicksand';
-                        line-height: 1.5;
-                    ">Proactively integrate turnkey synergy with world-class portals. Proactively harness sticky users whereas cooperative opportunities. harness exceptional before fully researched services. Seamlessly network client-focused results via interdependent markets.</p>
+                    <p style="width: 80%;">Proactively integrate turnkey synergy with world-class portals. Proactively harness sticky users whereas cooperative opportunities. harness exceptional before fully researched services. Seamlessly network client-focused results via interdependent markets.</p>
                 </div>
             </div>
         </section>
         <section style="
-        display: block;
+            display: block;
             background-color: #000;
             color: #fff;
             width: 100%;
@@ -126,7 +110,6 @@
                 padding: 70px 120px 120px;
             ">
                 <h2 style="
-                    font-family: Oswald;
                     font-size: 60px;
                     font-weight: 600;
                     text-transform: capitalize;
@@ -140,14 +123,9 @@
                     align-items: center;
                     width: 100%;
                 ">
-                    <div style="
-                        display: flex;
-                        align-items: center;
-                    ">
+                    <div class="horizontal_wrapper">
                         <h4 style="
-                            font-family: Oswald,Sans-serif;
                             font-size: 80px;
-                            font-weight: 600;
                             letter-spacing: -2.4px;
                             margin: 0px;
                         ">12K</h4>
@@ -160,16 +138,10 @@
                         ">Happy<br /> Customer</span>
                     </div>
                     <div style="height: 100px; width: 1px; background-color: #aaa;"></div>
-                    <div style="
-                        display: flex;
-                        align-items: center;
-                    ">
+                    <div class="horizontal_wrapper">
                         <h4 style="
-                            font-family: Oswald,Sans-serif;
                             font-size: 80px;
-                            font-weight: 600;
                             letter-spacing: -2.4px;
-                            margin: 0px;
                         ">12K</h4>
                         <span style="
                             margin-left: 30px;
@@ -180,16 +152,10 @@
                         ">Happy<br /> Customer</span>
                     </div>
                     <div style="height: 100px; width: 1px; background-color: #aaa;"></div>
-                    <div style="
-                        display: flex;
-                        align-items: center;
-                    ">
+                    <div class="horizontal_wrapper">
                         <h4 style="
-                            font-family: Oswald,Sans-serif;
                             font-size: 80px;
-                            font-weight: 600;
                             letter-spacing: -2.4px;
-                            margin: 0px;
                         ">12K</h4>
                         <span style="
                             margin-left: 30px;
@@ -200,16 +166,10 @@
                         ">Happy<br /> Customer</span>
                     </div>
                     <div style="height: 100px; width: 1px; background-color: #aaa;"></div>
-                    <div style="
-                        display: flex;
-                        align-items: center;
-                    ">
+                    <div class="horizontal_wrapper">
                         <h4 style="
-                            font-family: Oswald,Sans-serif;
                             font-size: 80px;
-                            font-weight: 600;
                             letter-spacing: -2.4px;
-                            margin: 0px;
                         ">12K</h4>
                         <span style="
                             margin-left: 30px;
@@ -223,198 +183,139 @@
             </div>
         </section>
         <section style="
-            width: 100%;
             margin-top: 100px;
-            display: flex;
             flex-direction: column;
             align-items: center;
         ">
-            <h5 style="
-                font-size: 20px;
-                font-weight: 500;
-                text-transform: capitalize;
-                margin: 0px;
-            ">Our Team</h5>
+            <h5>Our Team</h5>
             <h3 style="
-                font-size: 50px;
-                font-weight: 700;
-                text-transform: capitalize;
                 letter-spacing: -.75px;
                 text-align: center;
-                font-family: 'Oswald';
                 margin: 0px;
             ">Meet Our Team Of Experts</h3>
-            <div style="
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                width: 100%;
-                margin-top: 80px;
-            ">
-                <div style="
-                    width: 48%;
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 4vw;
-                ">
-                    <img src="https://demo.phlox.pro/hotel/wp-content/uploads/sites/239/2020/11/sadfgv.jpg" alt="" srcset="" style="
-                        width: 45%;
-                    ">
-                    <div style="
-                        width: 50%;
-                    ">
-                        <h4 style="
-                            line-height: 1.15;
-                            font-size: 25px;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            margin: 0px 0px 17px;
-                            font-family: 'Oswald';
-                        ">EDWARD DALFON</h4>
-                        <span style="
-                            font-size: 16px;
-                            font-weight: 500;
-                            text-transform: uppercase;
-                        ">CEO FINANCE OFFICER</span>
-                        <p style="
-                            margin-top: 30px;
-                            margin-bottom: 40px;
-                            line-height: 1.5;
-                            color: #00000099 !important;
-                            font-size: 16px;
-                        ">When, while lovely valley teems with vapour around meand eridian strikes the upper impenetrable</p>
-                        <div style="display: flex;">
-                            <div style="margin-right: 20px;">T</div>
-                            <div style="margin-right: 20px;">I</div>
-                            <div style="margin-right: 20px;">W</div>
+            <div id="teams_container" class="teams_container">
+                <div class="team_wrapper">
+                    <div class="skeleton team_img" style="height: 20vw">
+                    </div>
+                    <div class="team_content">
+                        <div class="skeleton" style="
+                            width: 85%;
+                            height: 1.6vw;
+                            margin-bottom: 20px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 70%;
+                            height: 1.3vw;
+                            margin-bottom: 50px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 100%;
+                            height: 1.2vw;
+                            margin-bottom: 15px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 100%;
+                            height: 1.2vw;
+                        ">
                         </div>
                     </div>
                 </div>
-                <div style="
-                    width: 48%;
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 4vw;
-                ">
-                    <img src="https://demo.phlox.pro/hotel/wp-content/uploads/sites/239/2020/11/sadfgv.jpg" alt="" srcset="" style="
-                        width: 45%;
-                    ">
-                    <div style="
-                        width: 50%;
-                    ">
-                        <h4 style="
-                            line-height: 1.15;
-                            font-size: 25px;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            margin: 0px 0px 17px;
-                            font-family: 'Oswald';
-                        ">EDWARD DALFON</h4>
-                        <span style="
-                            font-size: 16px;
-                            font-weight: 500;
-                            text-transform: uppercase;
-                        ">CEO FINANCE OFFICER</span>
-                        <p style="
-                            margin-top: 30px;
-                            margin-bottom: 40px;
-                            line-height: 1.5;
-                            color: #00000099 !important;
-                            font-size: 16px;
-                        ">When, while lovely valley teems with vapour around meand eridian strikes the upper impenetrable</p>
-                        <div style="display: flex;">
-                            <div style="margin-right: 20px;">T</div>
-                            <div style="margin-right: 20px;">I</div>
-                            <div style="margin-right: 20px;">W</div>
+                <div class="team_wrapper">
+                    <div class="skeleton team_img" style="height: 20vw">
+                    </div>
+                    <div class="team_content">
+                        <div class="skeleton" style="
+                            width: 85%;
+                            height: 1.6vw;
+                            margin-bottom: 20px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 70%;
+                            height: 1.3vw;
+                            margin-bottom: 50px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 100%;
+                            height: 1.2vw;
+                            margin-bottom: 15px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 100%;
+                            height: 1.2vw;
+                        ">
                         </div>
                     </div>
                 </div>
-                <div style="
-                    width: 48%;
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 4vw;
-                ">
-                    <img src="https://demo.phlox.pro/hotel/wp-content/uploads/sites/239/2020/11/sadfgv.jpg" alt="" srcset="" style="
-                        width: 45%;
-                    ">
-                    <div style="
-                        width: 50%;
-                    ">
-                        <h4 style="
-                            line-height: 1.15;
-                            font-size: 25px;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            margin: 0px 0px 17px;
-                            font-family: 'Oswald';
-                        ">EDWARD DALFON</h4>
-                        <span style="
-                            font-size: 16px;
-                            font-weight: 500;
-                            text-transform: uppercase;
-                        ">CEO FINANCE OFFICER</span>
-                        <p style="
-                            margin-top: 30px;
-                            margin-bottom: 40px;
-                            line-height: 1.5;
-                            color: #00000099 !important;
-                            font-size: 16px;
-                        ">When, while lovely valley teems with vapour around meand eridian strikes the upper impenetrable</p>
-                        <div style="display: flex;">
-                            <div style="margin-right: 20px;">T</div>
-                            <div style="margin-right: 20px;">I</div>
-                            <div style="margin-right: 20px;">W</div>
+                <div class="team_wrapper">
+                    <div class="skeleton team_img" style="height: 20vw">
+                    </div>
+                    <div class="team_content">
+                        <div class="skeleton" style="
+                            width: 85%;
+                            height: 1.6vw;
+                            margin-bottom: 20px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 70%;
+                            height: 1.3vw;
+                            margin-bottom: 50px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 100%;
+                            height: 1.2vw;
+                            margin-bottom: 15px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 100%;
+                            height: 1.2vw;
+                        ">
                         </div>
                     </div>
                 </div>
-                <div style="
-                    width: 48%;
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 4vw;
-                ">
-                    <img src="https://demo.phlox.pro/hotel/wp-content/uploads/sites/239/2020/11/sadfgv.jpg" alt="" srcset="" style="
-                        width: 45%;
-                    ">
-                    <div style="
-                        width: 50%;
-                    ">
-                        <h4 style="
-                            line-height: 1.15;
-                            font-size: 25px;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            margin: 0px 0px 17px;
-                            font-family: 'Oswald';
-                        ">EDWARD DALFON</h4>
-                        <span style="
-                            font-size: 16px;
-                            font-weight: 500;
-                            text-transform: uppercase;
-                        ">CEO FINANCE OFFICER</span>
-                        <p style="
-                            margin-top: 30px;
-                            margin-bottom: 40px;
-                            line-height: 1.5;
-                            color: #00000099 !important;
-                            font-size: 16px;
-                        ">When, while lovely valley teems with vapour around meand eridian strikes the upper impenetrable</p>
-                        <div style="display: flex;">
-                            <div style="margin-right: 20px;">T</div>
-                            <div style="margin-right: 20px;">I</div>
-                            <div style="margin-right: 20px;">W</div>
+                <div class="team_wrapper">
+                    <div class="skeleton team_img" style="height: 20vw">
+                    </div>
+                    <div class="team_content">
+                        <div class="skeleton" style="
+                            width: 85%;
+                            height: 1.6vw;
+                            margin-bottom: 20px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 70%;
+                            height: 1.3vw;
+                            margin-bottom: 50px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 100%;
+                            height: 1.2vw;
+                            margin-bottom: 15px;
+                        ">
+                        </div>
+                        <div class="skeleton team_content" style="
+                            width: 100%;
+                            height: 1.2vw;
+                        ">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section style="
-            /*background-attachment: fixed; */
             background-position: center;
             background-size: contain;
             height: 37vw;
-            width: 100%;
             margin-top: 100px;
             position: relative;
         ">
@@ -423,142 +324,77 @@
                 height: 100%;
                 object-fit: cover;
             ">
-            <div style="
+            <div class="horizontal_wrapper" style="
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 top: 0;
-                display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
                 color: #fff;
             ">
                 <h2 style="
                     font-size: 60px;
-                    font-weight: 700;
                     text-transform: capitalize;
                     margin: 0 0 20px;
                     text-align: center;
-                    font-family: 'Oswald';
                     margin: 0px;
                 ">Let's Talk About Work</h2>
                 <p style="
-                    font-family: Quicksand,Sans-serif;
                     margin: 17px 0 30px;
-                    line-height: 1.5;
                     text-align: center;
                     color: #FFFFFFCC;
-                    font-size: 16px;
                     max-width: 374px;
                 ">A wonderful serenity has taken possession Far far away, behind the word mountains.</p>
                 <button type="submit" style="
-                    padding: 15px 50px;
-                    border-style: none;
                     background-color: #fff;
                     color: #000;
-                    border-radius: 60px;
-                    font-family: Quicksand,Sans-serif;
-                    font-size: 16px;
                     line-height: 1.5;
                 ">Start Now</button>
             </div>
         </section>
-        <footer style="
-            width: 100%;
-            margin-top: 100px;
-        ">
-            <div style="
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-            ">
-                <div style="width: 21%">
-                    <img style="height: 50px;" src="/assets/images/logo.png" alt="" srcset="">
-                    <p style="
-                        font-family: Quicksand,Sans-serif;
-                        font-size: 16px;
-                        margin: 30px 0 30px;
-                        line-height: 1.5;
-                    ">There are many variations of passages of have suffered alteration in some look even slightly believable.</p>
-                </div>
-                <div style="width: 21%">
-                    <h2 style="
-                        font-size: 20px;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        margin: 0 0 55px;
-                        font-family: 'Oswald';
-                    ">CONTACT INFO</h2>
-                    <p style="
-                        font-family: Quicksand,Sans-serif;
-                        font-size: 16px;
-                        line-height: 1.5;
-                    ">Address : Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051</p>
-                    <p style="
-                        font-family: Quicksand,Sans-serif;
-                        font-size: 16px;
-                        line-height: 1.5;
-                    ">Phone: +99 (0) 101 0000 888</p>
-                    <p style="
-                        font-family: Quicksand,Sans-serif;
-                        font-size: 16px;
-                        line-height: 1.5;
-                    ">Email: Info@yourdomain.com</p>
-                </div>
-                <div style="width: 21%">
-                    <h2 style="
-                        font-size: 20px;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        margin: 0 0 55px;
-                        font-family: 'Oswald';
-                    ">QUICK LINKS</h2>
-                    <ul style="padding: 0px; margin: 0px; list-style: none;">
-                        <li style="margin-bottom: 15px;">Home</li>
-                        <li style="margin-bottom: 15px;">About</li>
-                        <li style="margin-bottom: 15px;">Privacy & Policy</li>
-                        <li style="margin-bottom: 15px;">Contact</li>
-                        <li style="margin-bottom: 15px;">Blog</li>
-                        <li style="margin-bottom: 15px;">Term & Condition</li>
-                    </ul>
-                </div>
-                <form style="width: 21%; display: flex; flex-direction: column;">
-                    <h2 style="
-                        font-size: 20px;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        margin: 0 0 55px;
-                        font-family: 'Oswald';
-                    ">NEWSLETTER</h2>
-                    <input type="email" name="" id="" placeholder="Email Address" style="
-                        width: 100%; 
-                        background-color: #0000001A; 
-                        color: #3d3d3d; 
-                        margin-bottom: 1em;
-                        border-style: none;
-                        padding: 15px 25px;
-                        border-radius: 60px;
-                        font-family: Quicksand,Sans-serif;
-                        font-size: 16px;
-                        line-height: 1.5;
-                    ">
-                    <button type="submit" style="
-                        width: 100%;
-                        padding: 15px 25px;
-                        border-style: none;
-                        background-color: #000;
-                        color: #fff;
-                        border-radius: 60px;
-                        font-family: Quicksand,Sans-serif;
-                        font-size: 16px;
-                        line-height: 1.5;
-                    ">Subscribe</button>
-                </form>
-            </div>
-            <div style="width: 100%; background-color: #00000033; height: 1px; margin-top: 80px;"></div>
-            <div style="padding: 20px 0px; text-align: center; color: #70798b; font-size: 16px;">© 2022 Phlox . All Rights Reserved</div>
-        </footer>
     </main>
+    <footer>
+        <div class="footer_top">
+            <div style="width: 21%">
+                <img style="height: 50px;" src="/assets/images/logo.png" alt="" srcset="">
+                <p style="margin: 30px 0 30px;">There are many variations of passages of have suffered alteration in some look even slightly believable.</p>
+                <div class="horizontal_wrapper">
+                    <ion-icon name="logo-instagram" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                    <ion-icon name="logo-whatsapp" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                    <ion-icon name="logo-youtube" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                </div>
+            </div>
+            <div style="width: 21%">
+                <h2>CONTACT INFO</h2>
+                <p>Address : Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051</p>
+                <p>Phone: +99 (0) 101 0000 888</p>
+                <p>Email: Info@yourdomain.com</p>
+            </div>
+            <div style="width: 21%">
+                <h2>QUICK LINKS</h2>
+                <ul style="padding: 0px; margin: 0px;">
+                    <li style="margin-bottom: 15px;"><a href="index.html">Home</a></li>
+                    <li style="margin-bottom: 15px;">About</li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Privacy & Policy</a></li>
+                    <li style="margin-bottom: 15px;"><a href="contact.html">Contact</a></li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Blog</a></li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Term & Condition</a></li>
+                </ul>
+            </div>
+            <form id="footer_form">
+                <h2>NEWSLETTER</h2>
+                <input class="footer_input" type="email" name="" id="" placeholder="Email Address">
+                <button class="footer_submit_button" type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer_divider"></div>
+        <div class="footer_copyright">© 2022 Phlox . All Rights Reserved</div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/shared/footer.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

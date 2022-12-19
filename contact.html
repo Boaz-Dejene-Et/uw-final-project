@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Project</title>
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manjari&family=Oswald:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +15,15 @@
         <section class="header_top">
             <span style="color: #FFFFFFB3;">There are many variations of passage</span>
             <div class="horizontal_wrapper">
-                <div class="horizontal_wrapper">
-                    <img /> <!--icon-->
-                    <div class="header_top_info">info@yourdomain.com</div>
-                </div>
+                <a href="tel:+251911015526" class="horizontal_wrapper" style="color: #fff">
+                    <ion-icon name="call-outline" style="width: 18px; height: 18px; margin-right: 7px;"></ion-icon>
+                    <div class="header_top_info">+1 555 458 235</div>
+                </a>
                 <div style="height: 30px; width: 1px; background-color: azure; margin: 0px 20px;"></div>
-                <div style="display: flex;">
-                    <img /> <!--icon-->
+                <a href="mailto:info@yourdomain.com" class="horizontal_wrapper" style="color: #fff">
+                    <ion-icon name="mail-outline" style="width: 20px; height: 20px; margin-right: 7px;"></ion-icon>
                     <div class="header_top_info">info@yourdomain.com</div>
-                </div>
+                </a>
             </div>
         </section>
         <section class="header_main">
@@ -35,6 +36,30 @@
             </ul>
         </section>
     </header>
+    <div id="modal" class="close_modal">
+        <div class="modal">
+            <img class="modal_image" src="https://images.unsplash.com/photo-1671138638073-ba77c5c2e388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" srcset="">
+            <div style="
+                width: 55%;
+                position: relative;
+                padding-top: 40px;
+            ">
+                <div class="modal_close_button" onclick="closeModal()">x</div>
+                <h1>Welcome to Phlox Hotel</h1>
+                <p style="padding-right: 33px;">When, while the lovely valley teems with vapour around me, and the meridian teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.</p>
+                <div style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 50px 33px 0px 0px;
+                ">
+                    <div style="height: 1px; width: 20%; background-color: #999;"></div>
+                    <div>Social Links</div>
+                    <div style="height: 1px; width: 20%; background-color: #999;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="section_1">
             <div style="width: 35%">
@@ -51,11 +76,11 @@
                     margin-bottom: 40px;
                 ">Send Massage</h2>
                 <div style="display: flex; justify-content: space-between; width: 100%">
-                    <input placeholder="Full Name*" type="text" name="fullName" id="">
-                    <input placeholder="Email*" type="email" name="email" id="">
-                    <input placeholder="Phone Number*" type="number" name="phone" id="">
+                    <input placeholder="Full Name*" type="text" name="fullName" id="fullName">
+                    <input placeholder="Email*" type="email" name="email" id="email">
+                    <input placeholder="Phone Number*" type="tel" name="phone" id="phone">
                 </div>
-                <textarea placeholder="Message" name="" id=""></textarea>
+                <textarea placeholder="Message" name="message" id="message"></textarea>
                 <div style="display: flex; justify-content: flex-end;">
                     <button type="submit" style="
                         margin-top: 70px;
@@ -73,12 +98,9 @@
                     flex-direction: column;
                     align-items: center;
                 ">
-                    <div style="
-                        background-color: #fff;
-                        width: 100px;
-                        height: 100px;
-                    "></div>
+                    <ion-icon name="mail-outline" style="width: 100px; height: 100px;"></ion-icon>
                     <h4 style="
+                        text-align: center;
                         margin-bottom: 20px;
                         font-size: 25px;
                         font-weight: 700;
@@ -97,25 +119,21 @@
                 <div class="horizontal_wrapper" style="
                     flex-direction: column;
                 ">
-                    <div style="
-                        background-color: #fff;
-                        width: 100px;
-                        height: 100px;
-                    "></div>
+                    <ion-icon name="call-outline" style="width: 100px; height: 100px;"></ion-icon>
                     <h4 style="
                         margin-bottom: 20px;
                         font-size: 25px;
                         font-weight: 700;
                         line-height: 1;
-                    ">Email :</h4>
+                    ">Phone :</h4>
                     <p style="
                         color: #FFFFFFB3 !important;
                         margin: 0px;
-                    ">info@yourdomain.com</p>
+                    ">+7 (212) 654-33-35</p>
                     <p style="
                         color: #FFFFFFB3 !important;
                         margin: 0px;
-                    ">info@digitalmarketing.com</p>
+                    ">+99 (0) 101 0000 888</p>
                 </div>
                 <div style="background-color: #888; width: 1px; height: 300px;"></div>
                 <div style="
@@ -123,25 +141,21 @@
                     flex-direction: column;
                     align-items: center;
                 ">
-                    <div style="
-                        background-color: #fff;
-                        width: 100px;
-                        height: 100px;
-                    "></div>
+                    <ion-icon name="location-outline" style="width: 100px; height: 100px;"></ion-icon>
                     <h4 style="
                         margin-bottom: 20px;
                         font-size: 25px;
                         font-weight: 700;
                         line-height: 1;
-                    ">Email :</h4>
+                    ">Address :</h4>
                     <p style="
                         color: #FFFFFFB3 !important;
                         margin: 0px;
-                    ">info@yourdomain.com</p>
+                    ">patricia C. Amedee 4401 waldeck</p>
                     <p style="
                         color: #FFFFFFB3 !important;
                         margin: 0px;
-                    ">info@digitalmarketing.com</p>
+                    ">Street Grapevine nashville, Tx 76051</p>
                 </div>
             </div>
         </section>
@@ -150,7 +164,6 @@
             background-position: center;
             background-size: contain;
             height: 37vw;
-            width: 100%;
             margin-top: 100px;
             position: relative;
         ">
@@ -172,31 +185,19 @@
             ">
                 <h2 style="
                     font-size: 60px;
-                    font-weight: 700;
                     text-transform: capitalize;
-                    margin: 0 0 20px;
                     text-align: center;
-                    font-family: 'Oswald';
                     margin: 0px;
                 ">Let's Talk About Work</h2>
                 <p style="
-                    font-family: Quicksand,Sans-serif;
                     margin: 17px 0 30px;
-                    line-height: 1.5;
                     text-align: center;
                     color: #FFFFFFCC;
-                    font-size: 16px;
                     max-width: 374px;
                 ">A wonderful serenity has taken possession Far far away, behind the word mountains.</p>
                 <button type="submit" style="
-                    padding: 15px 50px;
-                    border-style: none;
                     background-color: #fff;
                     color: #000;
-                    border-radius: 60px;
-                    font-family: Quicksand,Sans-serif;
-                    font-size: 16px;
-                    line-height: 1.5;
                 ">Start Now</button>
             </div>
         </section>
@@ -206,6 +207,11 @@
             <div style="width: 21%">
                 <img style="height: 50px;" src="/assets/images/logo.png" alt="" srcset="">
                 <p style="margin: 30px 0 30px;">There are many variations of passages of have suffered alteration in some look even slightly believable.</p>
+                <div class="horizontal_wrapper">
+                    <ion-icon name="logo-instagram" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                    <ion-icon name="logo-whatsapp" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                    <ion-icon name="logo-youtube" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                </div>
             </div>
             <div style="width: 21%">
                 <h2>CONTACT INFO</h2>
@@ -216,17 +222,17 @@
             <div style="width: 21%">
                 <h2>QUICK LINKS</h2>
                 <ul style="padding: 0px; margin: 0px;">
-                    <li style="margin-bottom: 15px;">Home</li>
-                    <li style="margin-bottom: 15px;">About</li>
-                    <li style="margin-bottom: 15px;">Privacy & Policy</li>
+                    <li style="margin-bottom: 15px;"><a href="index.html">Home</a></li>
+                    <li style="margin-bottom: 15px;"><a href="about.html">About</a></li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Privacy & Policy</a></li>
                     <li style="margin-bottom: 15px;">Contact</li>
-                    <li style="margin-bottom: 15px;">Blog</li>
-                    <li style="margin-bottom: 15px;">Term & Condition</li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Blog</a></li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Term & Condition</a></li>
                 </ul>
             </div>
             <form id="footer_form">
                 <h2>NEWSLETTER</h2>
-                <input class="footer_input" type="email" name="email" id="" placeholder="Email Address">
+                <input class="footer_input" type="email" name="" id="" placeholder="Email Address">
                 <button class="footer_submit_button" type="submit">Subscribe</button>
             </form>
         </div>
@@ -236,5 +242,7 @@
     <script src="js/main.js"></script>
     <script src="js/shared/contact-form.js"></script>
     <script src="js/shared/footer.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

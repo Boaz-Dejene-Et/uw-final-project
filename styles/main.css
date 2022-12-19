@@ -1,0 +1,225 @@
+body {
+    margin: 0px;
+    font-family: 'Quicksand'
+}
+main {
+    margin: 0px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    display: flex;
+    width: 100%
+}
+h1 {
+    font-family: 'Oswald';
+}
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 55px;
+    font-family: 'Oswald';
+}
+h3 {
+    font-weight: 700;
+    font-size: 50px !important;
+    text-transform: capitalize;
+    font-family: 'Oswald';
+    font-size: 80px;
+    line-height: 1.2em !important;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Oswald';
+    margin: 0px;
+    margin-left: 15px;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    text-transform: capitalize;
+}
+span {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+p {
+    font-size: 16px;
+    font-family: 'Quicksand';
+    line-height: 1.5;
+}
+ul {
+    list-style: none;
+}
+li {
+    padding: 0px 20px; 
+    cursor: pointer; 
+    font-size: 16px;
+}
+li:hover {
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: #000
+}
+form {
+    width: 21%; 
+    display: flex; 
+    flex-direction: column;
+}
+input {
+    font-family: 'Quicksand';
+}
+textarea {
+    width: 100%;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #00000080;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    padding: 16px 0px;
+}
+button {
+    border-radius: 50px;
+    border-width: 0px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+    font-family: 'Quicksand',Sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px 50px;
+}
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+    margin-top: 100px;
+    padding: 0px 35px;
+}
+footer li {
+    padding: 0px !important;
+    width: fit-content
+}
+.is-invalid {
+    border-width: 1px !important;
+    border-radius: 4px;
+    border-color: orangered !important;
+}
+.is-invalid_footer_input {
+    border-width: 1px !important;
+    border-color: orangered !important;
+}
+.is-invalid_footer_input:active {
+    border-width: 1px !important;
+    border-color: orangered !important;
+}
+.horizontal_wrapper {
+    display: flex;
+    align-items: center;
+}
+.header_top {
+    background-color: #000; 
+    color: #fff; 
+    height: 45px; 
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+}
+.header_top_info {
+    color: #FFFFFFB3;
+    font-size: 15px;
+    text-align: center
+}
+.header_top_divider {
+    height: 30px;
+    width: 1px;
+    background-color: azure;
+    margin: 0px 20px;
+}
+.header_main {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px; 
+    height: 85px;
+    width: auto;
+}
+.modal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 60, 60, 0.471);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.modal {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    height: 400px;
+}
+.modal_image {
+    width: 40%;
+    height: 100%;
+}
+.modal_close_button {
+    position: absolute; 
+    top: 30; right: 30; 
+    cursor: pointer; 
+    width: fit-content;
+}
+.close_modal {
+    display: none;
+}
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer_link_wrapper {
+    padding: 0px;
+    margin: 0px;
+}
+.footer_link {
+    margin-bottom: 15px;
+}
+.footer_input {
+    width: 100%; 
+    background-color: #0000001A; 
+    color: #3d3d3d; 
+    margin-bottom: 1em;
+    border-width: 0px;
+    padding: 15px 25px;
+    border-radius: 60px;
+    font-family: Quicksand,Sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.footer_submit_button {
+    width: 100%;
+}
+.footer_divider {
+    width: 100%;
+    background-color: #00000033;
+    height: 1px;
+    margin-top: 80px;
+}
+.footer_copyright {
+    padding: 20px 0px;
+    text-align: center;
+    color: #70798b;
+    font-size: 16px;
+}

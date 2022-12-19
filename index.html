@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Project</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manjari&family=Oswald:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +15,15 @@
         <section class="header_top">
             <span style="color: #FFFFFFB3;">There are many variations of passage</span>
             <div class="horizontal_wrapper">
-                <div class="horizontal_wrapper">
-                    <img /> <!--icon-->
+                <a href="tel:+251911015526" class="horizontal_wrapper" style="color: #fff">
+                    <ion-icon name="call-outline" style="width: 18px; height: 18px; margin-right: 7px;"></ion-icon>
+                    <div class="header_top_info">+1 555 458 235</div>
+                </a>
+                <div style="height: 30px; width: 1px; background-color: azure; margin: 0px 20px;"></div>
+                <a href="mailto:info@yourdomain.com" class="horizontal_wrapper" style="color: #fff">
+                    <ion-icon name="mail-outline" style="width: 20px; height: 20px; margin-right: 7px;"></ion-icon>
                     <div class="header_top_info">info@yourdomain.com</div>
-                </div>
-                <div class="header_top_divider"></div>
-                <div class="horizontal_wrapper">
-                    <img /> <!--icon-->
-                    <div class="header_top_info">info@yourdomain.com</div>
-                </div>
+                </a>
             </div>
         </section>
         <section class="header_main">
@@ -35,10 +36,34 @@
             </ul>
         </section>
     </header>
+    <div id="modal" class="close_modal">
+        <div class="modal">
+            <img class="modal_image" src="https://images.unsplash.com/photo-1671138638073-ba77c5c2e388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" srcset="">
+            <div style="
+                width: 55%;
+                position: relative;
+                padding-top: 40px;
+            ">
+                <div class="modal_close_button" onclick="closeModal()">x</div>
+                <h1>Welcome to Phlox Hotel</h1>
+                <p style="padding-right: 33px;">When, while the lovely valley teems with vapour around me, and the meridian teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.</p>
+                <div style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 50px 33px 0px 0px;
+                ">
+                    <div style="height: 1px; width: 20%; background-color: #999;"></div>
+                    <div>Social Links</div>
+                    <div style="height: 1px; width: 20%; background-color: #999;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="section_1">
             <div style="width: 100%;">
-                <img style="width: 100%;" src="https://demo.phlox.pro/hotel/wp-content/wp-content/uploads/sites/239/2020/12/Group_8019.jpg" alt="" srcset="">
+                <img style="width: 100%; min-height: 500px;" src="https://demo.phlox.pro/hotel/wp-content/wp-content/uploads/sites/239/2020/12/Group_8019.jpg" alt="" srcset="">
             </div>
             <div class="section_1_content">
                 <div>
@@ -60,7 +85,13 @@
                         color: #fff;
                     ">When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable .</p>
                 </div>
-                <div style="background-color: #fff; width: 80px; height: 80px; border-radius: 50%;"></div>
+                <div class="horizontal_wrapper play-button_container">
+                    <div class="play-button_background_1"></div>
+                    <div class="play-button_background_2"></div>
+                    <a href="https://www.youtube.com/watch?v=CYVWH78hflg" target="_blank" class="horizontal_wrapper play-button">
+                        <div class="play-icon"></div>
+                    </a>
+                </div>
             </div>
         </section>
         <section style="
@@ -137,7 +168,7 @@
                 <div class="quick_booking_wrapper">
                     <div style="width: 20%">
                         <div class="horizontal_wrapper">
-                            <div style="margin-right: 10px; background-color: #fff; height: 10px; width: 10px"></div>
+                            <ion-icon name="bed-outline" style="font-size: 30px; margin-right: 10px;"></ion-icon>
                             <label>BEDS</label>
                         </div>
                         <select name="beds" id="" required>
@@ -148,14 +179,14 @@
                     </div>
                     <div style="width: 20%">
                         <div class="horizontal_wrapper">
-                            <div style="margin-right: 10px; background-color: #fff; height: 10px; width: 10px"></div>
+                            <ion-icon name="calendar-outline" style="font-size: 30px; margin-right: 10px;"></ion-icon>
                             <label>DATE</label>
                         </div>
                         <input type="date" name="date" id="" required>
                     </div>
                     <div style="width: 20%">
                         <div class="horizontal_wrapper">
-                            <div style="margin-right: 10px; background-color: #fff; height: 10px; width: 10px"></div>
+                            <ion-icon name="people-outline" style="font-size: 30px; margin-right: 10px;"></ion-icon>
                             <label>GUEST</label>
                         </div>
                         <!-- <select name="guest" id="">
@@ -307,6 +338,11 @@
             <div style="width: 21%">
                 <img style="height: 50px;" src="/assets/images/logo.png" alt="" srcset="">
                 <p style="margin: 30px 0 30px;">There are many variations of passages of have suffered alteration in some look even slightly believable.</p>
+                <div class="horizontal_wrapper">
+                    <ion-icon name="logo-instagram" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                    <ion-icon name="logo-whatsapp" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                    <ion-icon name="logo-youtube" style="margin-right: 20px; width: 20px; height: 20px;"></ion-icon>
+                </div>
             </div>
             <div style="width: 21%">
                 <h2>CONTACT INFO</h2>
@@ -316,18 +352,18 @@
             </div>
             <div style="width: 21%">
                 <h2>QUICK LINKS</h2>
-                <ul class="footer_link_wrapper">
-                    <li class="footer_link">Home</li>
-                    <li class="footer_link">About</li>
-                    <li class="footer_link">Privacy & Policy</li>
-                    <li class="footer_link">Contact</li>
-                    <li class="footer_link">Blog</li>
-                    <li class="footer_link">Term & Condition</li>
+                <ul style="padding: 0px; margin: 0px;">
+                    <li style="margin-bottom: 15px;">Home</li>
+                    <li style="margin-bottom: 15px;"><a href="about.html">About</a></li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Privacy & Policy</a></li>
+                    <li style="margin-bottom: 15px;"><a href="contact.html">Contact</a></li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Blog</a></li>
+                    <li style="margin-bottom: 15px;"><a href="constraction.html">Term & Condition</a></li>
                 </ul>
             </div>
             <form id="footer_form">
                 <h2>NEWSLETTER</h2>
-                <input class="footer_input" type="email" name="email" id="" placeholder="Email Address">
+                <input class="footer_input" type="email" name="" id="" placeholder="Email Address">
                 <button class="footer_submit_button" type="submit">Subscribe</button>
             </form>
         </div>
@@ -338,5 +374,7 @@
     <script src="js/index.js"></script>
     <script src="js/shared/quickBooking.js"></script>
     <script src="js/shared/footer.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
