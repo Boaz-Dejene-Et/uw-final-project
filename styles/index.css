@@ -85,23 +85,51 @@
     height: 100%;
     width: 80%;
 }
-.card_image_wrapper {
+.gallery_card_wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     margin-top: 50px;
 }
-.image_card {
+.gallery_card {
     background-color: #707070;
-    width: 24%;
-    height: 22.2vw;
-    margin-bottom: 1.4vw;
+    width: 24.5%;
+    height: 23vw;
+    margin-bottom: 0.78vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.card_image {
+.gallery_card_image {
+    position: relative; 
     object-fit: center;
     height: 100%;
-    width: 100%
+    width: 100%;
+}
+.gallery_card_image:hover {
+    z-index: 1;
+    -webkit-animation: gallery-hover-animation 0.17s linear alternate forwards;
+    animation: gallery-hover-animation 0.17s linear alternate forwards;
+}
+@keyframes gallery-hover-animation {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 110%;
+        height: 110%;
+    }
+}
+.gallery_card_content {
+    position: absolute;
+    left: 11%;
+    bottom: 9%;
+    z-index: 2; 
+    color: #fff;
+    pointer-events: none;
 }
 .quick_booking {
     margin-top: 0px;
