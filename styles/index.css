@@ -36,7 +36,6 @@
 .play-button_container:hover .play-button_background_1 {
     animation: play-button-hover_background_1 0.4s linear infinite alternate;
 }
-
 .play-button_container:hover .play-button_background_2 {
     animation: play-button-hover_background_2 0.4s linear infinite alternate;
 }
@@ -61,6 +60,7 @@
         width: 110px;
     }
 }
+
 .play-button {
     justify-content: center; 
     background-color: #fff; 

@@ -184,6 +184,27 @@ footer li {
 .close_modal {
     display: none;
 }
+.work_with_us_container {
+    background-position: center;
+    background-size: contain;
+    height: 37vw;
+    margin-top: 100px;
+    position: relative;
+}
+.work_with_us_image {
+    width: 100%;
+    height: 0%;
+    object-fit: cover;
+}
+.work_with_us_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
 .footer_top {
     display: flex;
     justify-content: space-between;
