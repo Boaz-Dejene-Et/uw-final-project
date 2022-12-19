@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         divElement.setAttribute("onmouseleave", `galleryMouseLeave${index+1}()`);
         divElement.innerHTML = `
             <img class="gallery_card_image" id="card_image_${index+1}" src=${item} alt="" srcset="">
-            <div class="gallery_card_content">
+            <div class="gallery_card_content" id="gallery_card_content_${index+1}">
                 <h4 style="
                     margin: 0px; 
                     font-size: 30px;

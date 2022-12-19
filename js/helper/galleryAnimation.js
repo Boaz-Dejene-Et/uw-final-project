@@ -15,6 +15,9 @@ function galleryMouseEnter1() {
         width: '110%',
         height: '110%',
         zIndex: 1
+    }).to(`#gallery_card_content_1`, 0.15, {
+        opacity: 1,
+        bottom: '9%'
     })
 }
 function galleryMouseEnter2() {
@@ -22,6 +25,9 @@ function galleryMouseEnter2() {
         width: '110%',
         height: '110%',
         zIndex: 1
+    }).to(`#gallery_card_content_2`, 0.15, {
+        opacity: 1,
+        bottom: '9%'
     })
 }
 function galleryMouseEnter3() {
@@ -29,6 +35,9 @@ function galleryMouseEnter3() {
         width: '110%',
         height: '110%',
         zIndex: 1
+    }).to(`#gallery_card_content_3`, 0.15, {
+        opacity: 1,
+        bottom: '9%'
     })
 }
 function galleryMouseEnter4() {
@@ -36,6 +45,9 @@ function galleryMouseEnter4() {
         width: '110%',
         height: '110%',
         zIndex: 1
+    }).to(`#gallery_card_content_4`, 0.15, {
+        opacity: 1,
+        bottom: '9%'
     })
 }
 function galleryMouseEnter5() {
@@ -43,6 +55,9 @@ function galleryMouseEnter5() {
         width: '110%',
         height: '110%',
         zIndex: 1
+    }).to(`#gallery_card_content_5`, 0.15, {
+        opacity: 1,
+        bottom: '9%'
     })
 }
 function galleryMouseEnter6() {
@@ -50,6 +65,9 @@ function galleryMouseEnter6() {
         width: '110%',
         height: '110%',
         zIndex: 1
+    }).to(`#gallery_card_content_6`, 0.15, {
+        opacity: 1,
+        bottom: '9%'
     })
 }
 function galleryMouseEnter7() {
@@ -57,6 +75,9 @@ function galleryMouseEnter7() {
         width: '110%',
         height: '110%',
         zIndex: 1
+    }).to(`#gallery_card_content_7`, 0.15, {
+        opacity: 1,
+        bottom: '9%'
     })
 }
 function galleryMouseEnter8() {
@@ -64,60 +85,87 @@ function galleryMouseEnter8() {
         width: '110%',
         height: '110%',
         zIndex: 1
+    }).to(`#gallery_card_content_8`, 0.15, {
+        opacity: 1,
+        bottom: '9%'
     })
 }
 
 function galleryMouseLeave1() {
-    tl.to(`#card_image_1`, 0.15, {
+    tl.to(`#gallery_card_content_1`, 0.15, {
+        opacity: 0,
+        bottom: 0
+    }).to(`#card_image_1`, 0.15, {
         width: '100%',
         height: '100%',
         zIndex: 0
     })
 }
 function galleryMouseLeave2() {
-    tl.to(`#card_image_2`, 0.15, {
+    tl.to(`#gallery_card_content_2`, 0.15, {
+        opacity: 0,
+        bottom: 0
+    }).to(`#card_image_2`, 0.15, {
         width: '100%',
         height: '100%',
         zIndex: 0
     })
 }
 function galleryMouseLeave3() {
-    tl.to(`#card_image_3`, 0.15, {
+    tl.to(`#gallery_card_content_3`, 0.15, {
+        opacity: 0,
+        bottom: 0
+    }).to(`#card_image_3`, 0.15, {
         width: '100%',
         height: '100%',
         zIndex: 0
     })
 }
 function galleryMouseLeave4() {
-    tl.to(`#card_image_4`, 0.15, {
+    tl.to(`#gallery_card_content_4`, 0.15, {
+        opacity: 0,
+        bottom: 0
+    }).to(`#card_image_4`, 0.15, {
         width: '100%',
         height: '100%',
         zIndex: 0
     })
 }
 function galleryMouseLeave5() {
-    tl.to(`#card_image_5`, 0.15, {
+    tl.to(`#gallery_card_content_5`, 0.15, {
+        opacity: 0,
+        bottom: 0
+    }).to(`#card_image_5`, 0.15, {
         width: '100%',
         height: '100%',
         zIndex: 0
     })
 }
 function galleryMouseLeave6() {
-    tl.to(`#card_image_6`, 0.15, {
+    tl.to(`#gallery_card_content_6`, 0.15, {
+        opacity: 0,
+        bottom: 0
+    }).to(`#card_image_6`, 0.15, {
         width: '100%',
         height: '100%',
         zIndex: 0
     })
 }
 function galleryMouseLeave7() {
-    tl.to(`#card_image_7`, 0.15, {
+    tl.to(`#gallery_card_content_7`, 0.15, {
+        opacity: 0,
+        bottom: 0
+    }).to(`#card_image_7`, 0.15, {
         width: '100%',
         height: '100%',
         zIndex: 0
     })
 }
 function galleryMouseLeave8() {
-    tl.to(`#card_image_8`, 0.15, {
+    tl.to(`#gallery_card_content_8`, 0.15, {
+        opacity: 0,
+        bottom: 0
+    }).to(`#card_image_8`, 0.15, {
         width: '100%',
         height: '100%',
         zIndex: 0
