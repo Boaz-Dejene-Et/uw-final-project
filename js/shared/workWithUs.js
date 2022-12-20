@@ -1,17 +1,35 @@
-let workWithUsImage = document.querySelector('.work_with_us_container')
+let workWithUsAnimatable = document.querySelector('.work_with_us_animatable')
+let homePageLandingImage = document.querySelector('.section_1_image')
 
-ScrollTrigger.create({
-    start: 0,
-    end: "max",
-    onUpdate: updateValues
-  });
+let workWithUsAnimatableAnimated = false
+let homePageLandingImageAnimated = false
 
-function updateValues() {
-    if(ScrollTrigger.isInViewport(workWithUsImage)) {
-        tl.to('.work_with_us_image', 2,{
-            height: '100%',
-        })
-    }
+if(ScrollTrigger.isInViewport(homePageLandingImage) && !homePageLandingImageAnimated) {
+    homePageLandingImageAnimated = true
+    tl.to('.section_1_image', 2,{
+        height: '100%',
+    })
 }
 
-updateValues()
+function scrollTriggerOnUpdate() {
+    if(ScrollTrigger.isInViewport(workWithUsAnimatable) && !workWithUsAnimatableAnimated) {
+        workWithUsAnimatableAnimated = true
+        tl.to('.work_with_us_animatable', 1.8,{
+            height: '100%',
+        })
+        tl.to('.work_with_us_content', 2,{
+            y: 0,
+            opacity: 1
+        }, 2)
+    }
+    if(ScrollTrigger.isInViewport(homePageLandingImage) && !homePageLandingImageAnimated) {
+        homePageLandingImageAnimated = true
+        tl.to('.section_1_image', 2,{
+            height: 500,
+        })
+        // tl.to('.work_with_us_content', 2,{
+        //     y: 0,
+        //     opacity: 1
+        // }, 1)
+    }
+}

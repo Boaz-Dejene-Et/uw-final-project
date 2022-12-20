@@ -17,5 +17,11 @@ const showModal = () => {
 showModal()
 
 document.addEventListener("DOMContentLoaded", function() {
+    ScrollTrigger.create({
+        start: 0,
+        end: "bottom",
+        onUpdate: scrollTriggerOnUpdate,
+    });
     
+    window.history.scrollRestoration = "manual"
 })
