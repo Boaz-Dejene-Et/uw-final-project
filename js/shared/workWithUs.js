@@ -8,6 +8,12 @@ if(ScrollTrigger.isInViewport(homePageLandingImage) && !homePageLandingImageAnim
     homePageLandingImageAnimated = true
     tl.to('.section_1_image', 2,{
         height: '100%',
+        opacity: 1
+    })
+    tl.to('.section_1_content', 2,{
+        height: '100%',
+        opacity: 1,
+        y: 0
     })
 }
 
@@ -26,6 +32,12 @@ function scrollTriggerOnUpdate() {
         homePageLandingImageAnimated = true
         tl.to('.section_1_image', 2,{
             height: 500,
+            opacity: 1
+        })
+        tl.to('.section_1_content', 2,{
+            height: '100%',
+            opacity: 1,
+            y: 0
         })
         // tl.to('.work_with_us_content', 2,{
         //     y: 0,

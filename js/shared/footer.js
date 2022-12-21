@@ -18,6 +18,10 @@ let footerEmail = document.querySelector('.footer_input')
 
 footerForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Subscribed successfully')
+    if(footerEmail.value.length === 0) {
+        alert('Field can not be empty')
+    } else {
+        alert('Subscribed successfully')
+    }
     e.target.reset()
 });
