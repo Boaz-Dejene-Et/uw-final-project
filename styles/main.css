@@ -182,7 +182,7 @@ footer li {
     width: fit-content;
 }
 .close_modal {
-    display: none;
+    display: none !important;
 }
 .work_with_us_container {
     height: 37vw;
